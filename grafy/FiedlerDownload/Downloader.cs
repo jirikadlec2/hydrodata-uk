@@ -143,8 +143,10 @@ namespace Fiedler
         /// XML file and writes progress to the 'log' message string
         /// </summary>
         /// <param name="stationXmlFile"></param>
-        public int DownloadAll(string stationXmlFile, System.Text.StringBuilder log)
+        public int DownloadAll(string stationXmlFile, System.Text.StringBuilder log, string format)
         {
+            _format = format;
+            
             int numStations = 0;
             
             //read xml file
@@ -161,7 +163,7 @@ namespace Fiedler
                     }
                     else
                     {
-                        DownloadFile(st.Id, st.Id + ".txt");
+                        DownloadFile(st.Id, st.Id + ".dta");
                     }
                     ++numStations;
                 }

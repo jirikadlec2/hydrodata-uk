@@ -48,7 +48,9 @@ namespace Fiedler
             {
                 Downloader d = new Downloader(LocalDataDir, DownloadInterval);
                 //int numStations = 0;
-                int numStations = d.DownloadAll(StationXmlFile, log);
+                int numStations = d.DownloadAll(StationXmlFile, log, "CHMI_1");
+                //also for testing: download the DTA files
+                d.DownloadAll(StationXmlFile, log, "DTA");
                 log.AppendLine("Files downloaded: " + numStations);
                 DataManager m = DataManager.Create(ConnectionString);
                 m.CheckAllStations(StationXmlFile);
