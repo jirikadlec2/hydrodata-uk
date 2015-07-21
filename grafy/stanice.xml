@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Stanice a zobrazovane veliciny, aktualizovano 19.1.2009 -->
+
+<configuration>
+
+  <!-- nastaveni grafu (spolecne pro vsechny grafy) -->
+  <graphs>
+    <interval unit="days">7</interval>         <!-- zobrazene obdobi -->
+    <height unit="px">250</height>             <!-- vyska grafu v px -->
+    <width unit="px">500</width>               <!-- sirka grafu v px -->
+    <thumb_height unit="px">100</thumb_height>  <!-- vyska zmenseneho grafu -->
+    <thumb_width unit="px">200</thumb_width>    <!-- sirka zmenseneho grafu -->
+	<output_directory>grafy</output_directory>  <!-- relativni cesta k adresari pro ulozeni grafu -->
+  </graphs>
+  
+  <!-- seznam vsech stanic -->
+  <stations>
+    <station id="28500" name="tetrivci" label="Tetřívčí potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="2" type="tep" label="teplota" units="°C" />
+      <channel id="3" type="ph"  label="pH" units="" />
+      <channel id="4" type="tvo" label="teplota vody" units="°C" />
+	  <channel id="6" type="kon" label="vodivost 1" units="μS" />
+    </station>
+    <station id="28501" name="zbytinsky" label="Zbytinský potok">
+      <channel id="0" type="hla" label="hladina (ultrazvuk)" units="mm" />
+      <channel id="2" type="tep" label="teplota vzduchu" units="°C" />
+      <channel id="3" type="sra" label="srážky" units="mm" />
+      <channel id="4" type="hl2" label="hladina (tlak)" units="mm" />
+	  <channel id="5" type="kon" label="vodivost" units="μS" />
+      <channel id="6" type="tvo" label="teplota vody" units="°C" />
+      <channel id="7" type="t2m" label="teplota vzduchu (2m)" units="°C" />
+      <channel id="8" type="vlh" label="vlhkost vzduchu (2m)" units="%" />
+      <channel id="9" type="rad" label="radiace" units="W/m2" />
+    </station>
+    <station id="28502" name="revitalizace" label="Revitalizace">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+	  <channel id="2" type="kon" label="vodivost" units="μS" />
+    </station>
+	<station id="28532" name="srazkomer_zbytiny" label="Zbytiny - Koryto">
+      <channel id="0" type="sra" label="srážky" units="mm" />
+      <channel id="6" type="tep" label="teplota vzd." units="°C" />
+    </station>
+	<station id="28544" name="zbytiny_louka" label="Zbytiny louka">
+	   <channel id="1" type="vpu" label="vlhkost půdy 15cm" units="%" />
+       <channel id="2" type="vpu" label="vlhkost půdy 30cm" units="%" />
+	   <channel id="3" type="vpu" label="vlhkost půdy 60cm" units="%" />
+	   <channel id="4" type="tpu" label="teplota půdy 15cm" units="°C" />
+       <channel id="5" type="tpu" label="teplota půdy 30cm" units="°C" />
+	   <channel id="6" type="tpu" label="teplota půdy 60cm" units="°C" />
+	</station>
+	<station id="28547" name="zbytiny_les" label="Zbytiny les">
+	   <channel id="12" type="vpu" label="vlhkost půdy 15cm" units="%" />
+       <channel id="13" type="vpu" label="vlhkost půdy 30cm" units="%" />
+	   <channel id="14" type="vpu" label="vlhkost půdy 60cm" units="%" />
+	   <channel id="15" type="tpu" label="teplota půdy 15cm" units="°C" />
+       <channel id="16" type="tpu" label="teplota půdy 30cm" units="°C" />
+	   <channel id="17" type="tpu" label="teplota půdy 60cm" units="°C" />
+	   <channel id="20" type="vlh" label="vlhkost vzd." units="%" />
+	   <channel id="21" type="tep" label="teplota vzd." units="°C" />
+	   <channel id="22" type="sra" label="srážky" units="mm" />
+	</station>
+    <station id="28503" name="ptaci" label="Ptačí potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="sn"  label="výška sněhu" units="mm" />
+      <channel id="2" type="tep" label="teplota vzd." units="°C" />
+      <channel id="5" type="ph" label="pH" units="" />
+	  <channel id="8" type="kon" label="vodivost" units="μS" />
+	  <channel id="13" type="vlh" label="vlhkost vzd." units="%" />
+    </station>
+    <station id="28504" name="rokytka" label="Rokytka">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="2" type="tep" label="teplota vzd." units="°C" />
+      <channel id="3" type="sra" label="srážky" units="mm" />
+      <channel id="5" type="ph" label="pH" units="" />
+	  <channel id="7" type="red" label="redox/ISE" units="mV" />
+      <channel id="8" type="tvo" label="teplota vody" units="°C" />
+	  <channel id="10" type="kon" label="vodivost" units="μS" />
+    </station>
+    <station id="28505" name="roklansky" label="Roklanský potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="tep" label="teplota vzd." units="°C" />
+    </station>
+    <station id="28506" name="modravsky" label="Modravský potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+    </station>
+    <station id="28507" name="kremelna" label="Křemelná">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="tep" label="teplota vzd." units="°C" />
+    </station>
+    <station id="28508" name="prasilsky" label="Prášilský potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+    </station>
+    <station id="28509" name="zhurecky" label="Zhůřecký potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="tep" label="teplota vzd." units="°C" />
+      <channel id="2" type="sra" label="srážky" units="mm" />
+    </station>
+    <station id="28514" name="luznice_dvory" label="Lužnice - Dvory">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+    </station>
+    <station id="28515" name="losenice_rejstejn" label="Losenice - Rejštejn">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="tep" label="teplota vzd." units="°C" />
+    </station>
+    <station id="28520" name="ranklovsky" label="Ranklovský potok">
+      <channel id="0" type="hla" label="hladina-tlak" units="mm" />
+      <channel id="4" type="ph" label="pH" units="" />
+      <channel id="6" type="ro2" label="rozpuštěný kyslík" units="mg/l" />
+    </station>
+    <station id="28521" name="breznicky" label="Březnický potok">
+      <channel id="0" type="hla" label="hladina-tlak" units="mm" />
+      <channel id="1" type="rad" label="radiace" units="W/m2" />
+      <channel id="2" type="tep" label="teplota vzd." units="mm" />
+      <channel id="3" type="vlh" label="vlhkost vzd." units="%" />
+      <channel id="4" type="ryv" label="rychlost větru" units="m/s" />
+	  <channel id="6" type="red" label="redox" units="mV" />
+      <channel id="8" type="sra" label="srážky" units="mm" />
+      <channel id="9" type="ph" label="pH" units="" />
+	  <channel id="11" type="kon" label="vodivost" units="μS" />
+    </station>
+    <station id="28522" name="slatinny" label="Slatinný potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="ro2" label="rozpuštěný kyslík" units="mg/l" />
+      <channel id="2" type="tvo" label="teplota vody" units="°C" />
+    </station>
+    <station id="28523" name="cerny" label="Černý potok">
+      <channel id="0" type="hla" label="hladina-tlak" units="mm" />
+	  <channel id="1" type="red" label="redox" units="mV" />
+      <channel id="3" type="ph" label="pH" units="" />
+      <channel id="5" type="tvo" label="teplota vody" units="°C" />
+	  <channel id="6" type="kon" label="vodivost" units="μS" />
+    </station>
+    <station id="28529" name="javori_tmavy" label="Javoří a Tmavý potok">
+      <channel id="0" type="hla" label="hladina-uz" units="mm" />
+      <channel id="1" type="tep" label="teplota vzduchu" units="°C" />
+    </station>
+    <station id="28530" name="cernohorsky" label="Černohorský potok">
+      <channel id="0" type="hla" label="hladina-tlak" units="mm" />
+      <channel id="1" type="ph" label="pH" units="" />
+    </station>
+    <station id="28531" name="roklansky_hajenka" label="Roklanský p. - hájenka">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="tep" label="teplota" units="°C" />
+      <channel id="2" type="ph" label="pH" units="" />
+    </station>
+    <station id="28533" name="luznice_niva" label="Lužnice - niva">
+      <channel id="0" type="hla" label="hladina - Šimek" units="mm" />
+      <channel id="1" type="hla" label= "hladina - Pithart" units="mm" />
+      <channel id="2" type="hla" label="hladina - řeka řk141" units="mm" />
+      <channel id="3" type="sra" label="srážky" units="mm" />
+      <channel id="9" type="tla" label="Atm. Tlak" units="kPa" />
+    </station>
+    <station id="28534" name="cikansky" label="Cikánský potok">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="ph" label="pH" units="mm" />
+    </station>
+    <station id="28535" name="zihle" label="Žihle">
+      <channel id="0" type="sra" label="srážky" units="mm" />
+      <channel id="1" type="tep" label="teplota vzd." units="mm" />
+      <channel id="2" type="vlh" label="vlhkost vzd." units="%" />
+      <channel id="3" type="rad" label="Glob. radiace" units="W/m2" />
+      <channel id="4" type="tpu" label="teplota půdy" units="°C" />
+      <channel id="5" type="ryv" label="rychlost větru" units="m/s" />
+    </station>
+    <station id="28510" name="mladoticky_pod_j" label="Mladotické jezero">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+    </station>
+    <station id="28513" name="mladoticky_nad_j" label="Mladotický p. nad jezerem">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="tep" label="teplota vzd." units="°C" />
+      <channel id="2" type="tvo" label="teplota vody" units="°C" />
+      <channel id="6" type="ph" label="pH" units="°C" />
+    </station>
+    <station id="28541" name="blanice_klokocin" label="Blanice - Klokočín">
+      <channel id="0" type="hla" label="hladina" units="mm" />
+      <channel id="1" type="tep" label="teplota vzduchu" units="°C" />
+    </station>
+    <station id="28517" name="meteo_s_sebestian" label="Hora sv. Šebestiána">
+      <channel id="0" type="ryv" label="rychlost větru" units="m/s" />
+      <channel id="2" type="sra" label="srážky" units="mm" />
+      <channel id="3" type="vlh" label="vlhkost vzd." units="%" />
+      <channel id="4" type="tep" label="teplota vzd." units="mm" />
+      <channel id="7" type="rad" label="radiace" units="W/m2" />
+      <channel id="10" type="tpu" label="teplota půdy 1" units="°C" />
+      <channel id="11" type="tpu" label="teplota půdy 2" units="°C" />
+    </station>
+    <station id="28524" name="hrebecna" label="Hřebečná">
+      <channel id="0" type="sra" label="srážky" units="mm" />
+      <channel id="1" type="tep" label="teplota vzd." units="°C" />
+      <channel id="2" type="vlh" label="vlhkost vzd." units="%" />
+      <channel id="3" type="sn" label="výška sněhu" units="mm" />
+      <channel id="4" type="rad" label="radiace" units="W/m2" />
+      <channel id="5" type="ryv" label="rychlost větru" units="m/s" />
+      <channel id="7" type="tpu" label="teplota půdy 1" units="°C" />
+      <channel id="8" type="tpu" label="teplota půdy 2" units="°C" />
+      <channel id="9" type="tpu" label="teplota půdy 2" units="°C" />
+    </station>
+    <station id="28538" name="bystrice_abertamy" label="Bystřice - Abertamy">
+      <channel id="0" type="hla" label="hladina" units="m" />
+    </station>
+    <station id="28539" name="zlaty_potok" label="Zlatý potok">
+      <channel id="0" type="hla" label="hladina" units="m" />
+      <channel id="1" type="sra" label="srážky" units="mm" />
+	  <channel id="2" type="sn" label="výška sněhu" units="mm" />
+	  <channel id="4" type="tep" label="teplota vzd." units="°C" />
+	  <channel id="5" type="vlh" label="vlhkost vzd." units="%" />  
+	</station>
+    <station id="28543" name="slatinny2" label="Slatinný potok">
+      <channel id="1" type="hla" label="hladina" units="m" />
+      <channel id="2" type="tep" label="teplota vzduchu" units="°C" />
+	</station>
+  </stations>
+</configuration>
